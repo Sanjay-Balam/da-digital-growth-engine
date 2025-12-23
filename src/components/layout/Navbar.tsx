@@ -40,8 +40,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative">
-              <span className="text-2xl font-bold gradient-text">DA</span>
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
+              <span className="text-2xl font-bold text-primary">DA</span>
             </div>
             <span className="text-foreground/80 text-sm hidden sm:block">Digital Growth</span>
           </Link>
@@ -60,7 +59,7 @@ const Navbar = () => {
                 {location.pathname === link.path && (
                   <motion.div
                     layoutId="activeNav"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-secondary"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary"
                   />
                 )}
               </Link>

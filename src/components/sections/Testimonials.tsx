@@ -36,7 +36,7 @@ const Testimonials = () => {
   return (
     <section className="py-24 relative">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/30 to-transparent" />
+      <div className="absolute inset-0 bg-secondary/30" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
@@ -50,7 +50,7 @@ const Testimonials = () => {
             Testimonials
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-3 mb-4">
-            What Our <span className="gradient-text">Clients Say</span>
+            What Our <span className="text-primary">Clients Say</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Don't just take our word for it. Here's what our clients have to say about working with us.
@@ -85,7 +85,7 @@ const Testimonials = () => {
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-sm font-semibold text-primary-foreground">
+                <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-sm font-semibold text-primary">
                   {testimonial.avatar}
                 </div>
                 <div>

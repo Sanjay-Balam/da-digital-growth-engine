@@ -45,7 +45,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-hero-gradient" />
-        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -57,7 +57,7 @@ const About = () => {
               About Us
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-3 mb-6">
-              We Are <span className="gradient-text">DA Digital</span>
+              We Are <span className="text-primary">DA Digital</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               A full-service digital agency dedicated to helping businesses thrive 
@@ -80,7 +80,7 @@ const About = () => {
                 Our Story
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold mt-3 mb-6">
-                Transforming Businesses <span className="gradient-text">Since 2016</span>
+                Transforming Businesses <span className="text-primary">Since 2016</span>
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
@@ -106,9 +106,9 @@ const About = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 p-8 flex items-center justify-center">
+              <div className="aspect-square rounded-2xl bg-secondary border border-border p-8 flex items-center justify-center">
                 <div className="text-center">
-                  <span className="text-7xl font-bold gradient-text">8+</span>
+                  <span className="text-7xl font-bold text-primary">8+</span>
                   <p className="text-xl text-foreground mt-2">Years of Excellence</p>
                 </div>
               </div>
@@ -122,7 +122,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div
@@ -131,7 +131,7 @@ const About = () => {
               viewport={{ once: true }}
               className="p-8 rounded-2xl bg-card border border-border"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-4">
                 <Target className="text-primary" size={24} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
@@ -149,8 +149,8 @@ const About = () => {
               transition={{ delay: 0.1 }}
               className="p-8 rounded-2xl bg-card border border-border"
             >
-              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-4">
-                <Eye className="text-secondary" size={24} />
+              <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-4">
+                <Eye className="text-primary" size={24} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-muted-foreground">
@@ -176,7 +176,7 @@ const About = () => {
               Our Values
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mt-3">
-              What <span className="gradient-text">Drives Us</span>
+              What <span className="text-primary">Drives Us</span>
             </h2>
           </motion.div>
 
@@ -188,10 +188,10 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-card border border-border text-center hover:border-primary/50 transition-all"
+                className="p-6 rounded-2xl bg-card border border-border text-center hover:border-primary/30 transition-all"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary mx-auto mb-4 flex items-center justify-center">
-                  <value.icon size={24} className="text-primary-foreground" />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 mx-auto mb-4 flex items-center justify-center">
+                  <value.icon size={24} className="text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
                 <p className="text-sm text-muted-foreground">{value.description}</p>
@@ -202,7 +202,7 @@ const About = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -214,7 +214,7 @@ const About = () => {
                 Why Choose Us
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold mt-3 mb-6">
-                The <span className="gradient-text">DA Advantage</span>
+                The <span className="text-primary">DA Advantage</span>
               </h2>
               <p className="text-muted-foreground mb-8">
                 When you partner with DA Digital, you're choosing a team that's 
@@ -237,10 +237,10 @@ const About = () => {
               className="flex justify-center"
             >
               <div className="relative">
-                <div className="w-64 h-64 rounded-full border-4 border-primary/30 flex items-center justify-center">
-                  <div className="w-48 h-48 rounded-full border-4 border-secondary/30 flex items-center justify-center">
-                    <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                      <span className="text-4xl font-bold text-primary-foreground">DA</span>
+                <div className="w-64 h-64 rounded-full border-2 border-primary/20 flex items-center justify-center">
+                  <div className="w-48 h-48 rounded-full border-2 border-primary/30 flex items-center justify-center">
+                    <div className="w-32 h-32 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center">
+                      <span className="text-4xl font-bold text-primary">DA</span>
                     </div>
                   </div>
                 </div>
@@ -260,7 +260,7 @@ const About = () => {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Ready to <span className="gradient-text">Work Together?</span>
+              Ready to <span className="text-primary">Work Together?</span>
             </h2>
             <p className="text-muted-foreground mb-8">
               Let's discuss how we can help transform your business.

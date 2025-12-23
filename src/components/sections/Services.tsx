@@ -15,37 +15,31 @@ const services = [
     icon: TrendingUp,
     title: "Digital Marketing",
     description: "SEO, PPC, and performance marketing strategies that drive real results and measurable growth.",
-    color: "from-primary to-primary/50",
   },
   {
     icon: Globe,
     title: "Web Development",
     description: "Custom websites and web applications built with modern technologies for optimal performance.",
-    color: "from-secondary to-secondary/50",
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
     description: "Native and cross-platform mobile apps for iOS and Android that users love.",
-    color: "from-neon-pink to-neon-pink/50",
   },
   {
     icon: Code,
     title: "Custom Software",
     description: "Tailored software solutions designed to automate and streamline your business operations.",
-    color: "from-primary to-secondary",
   },
   {
     icon: Palette,
     title: "UI/UX Design",
     description: "Beautiful, intuitive designs that create memorable experiences and drive conversions.",
-    color: "from-secondary to-neon-pink",
   },
   {
     icon: Share2,
     title: "Social Media Management",
     description: "Strategic social media presence that builds brand awareness and engages your audience.",
-    color: "from-neon-pink to-primary",
   },
 ];
 
@@ -79,7 +73,7 @@ const Services = () => {
             What We Do
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-3 mb-4">
-            Services That <span className="gradient-text">Drive Growth</span>
+            Services That <span className="text-primary">Drive Growth</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             From strategy to execution, we provide comprehensive digital solutions 
@@ -99,16 +93,14 @@ const Services = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group relative p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-500"
+              className="group relative p-6 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-500"
             >
               {/* Hover Glow */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500" 
-                style={{ backgroundImage: `linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)))` }} 
-              />
+              <div className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               {/* Icon */}
-              <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${service.color} mb-4`}>
-                <service.icon size={24} className="text-primary-foreground" />
+              <div className="inline-flex p-3 rounded-xl bg-primary/10 border border-primary/20 mb-4">
+                <service.icon size={24} className="text-primary" />
               </div>
 
               {/* Content */}

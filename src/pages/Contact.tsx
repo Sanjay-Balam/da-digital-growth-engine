@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -73,8 +73,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-hero-gradient" />
-        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -87,7 +86,7 @@ const Contact = () => {
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-3 mb-6">
               Let's Build Something{" "}
-              <span className="gradient-text">Amazing</span>
+              <span className="text-primary">Amazing</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               Ready to transform your business? Get in touch with our team 
@@ -108,7 +107,7 @@ const Contact = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-2xl sm:text-3xl font-bold mb-6">
-                Get in <span className="gradient-text">Touch</span>
+                Get in <span className="text-primary">Touch</span>
               </h2>
               <p className="text-muted-foreground mb-8">
                 We'd love to hear from you. Whether you have a question about our 
@@ -121,9 +120,9 @@ const Contact = () => {
                   <a
                     key={index}
                     href={item.link}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-all"
+                    className="flex items-start gap-4 p-4 rounded-xl bg-card border border-border hover:border-primary/30 transition-all"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center flex-shrink-0">
                       <item.icon size={20} className="text-primary" />
                     </div>
                     <div>
@@ -175,7 +174,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="John Doe"
                       required
-                      className="bg-muted border-border"
+                      className="bg-secondary border-border"
                     />
                   </div>
                   <div>
@@ -190,7 +189,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="john@example.com"
                       required
-                      className="bg-muted border-border"
+                      className="bg-secondary border-border"
                     />
                   </div>
                 </div>
@@ -206,7 +205,7 @@ const Contact = () => {
                       value={formData.company}
                       onChange={handleChange}
                       placeholder="Your Company"
-                      className="bg-muted border-border"
+                      className="bg-secondary border-border"
                     />
                   </div>
                   <div>
@@ -220,7 +219,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Project Inquiry"
                       required
-                      className="bg-muted border-border"
+                      className="bg-secondary border-border"
                     />
                   </div>
                 </div>
@@ -237,7 +236,7 @@ const Contact = () => {
                     placeholder="Tell us about your project..."
                     rows={5}
                     required
-                    className="bg-muted border-border resize-none"
+                    className="bg-secondary border-border resize-none"
                   />
                 </div>
 

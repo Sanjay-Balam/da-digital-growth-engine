@@ -103,7 +103,7 @@ const ServicesPage = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-hero-gradient" />
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -115,7 +115,7 @@ const ServicesPage = () => {
               Our Services
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-3 mb-6">
-              Solutions That <span className="gradient-text">Drive Growth</span>
+              Solutions That <span className="text-primary">Drive Growth</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               Comprehensive digital services designed to transform your business 
@@ -140,8 +140,8 @@ const ServicesPage = () => {
                 }`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-primary to-secondary mb-4">
-                    <service.icon size={28} className="text-primary-foreground" />
+                  <div className="inline-flex p-3 rounded-xl bg-primary/10 border border-primary/20 mb-4">
+                    <service.icon size={28} className="text-primary" />
                   </div>
                   <span className="text-primary text-sm font-medium block mb-2">
                     {service.subtitle}
@@ -169,11 +169,11 @@ const ServicesPage = () => {
                 </div>
 
                 <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className="aspect-square rounded-2xl bg-gradient-to-br from-card to-muted border border-border p-8 flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5" />
+                  <div className="aspect-square rounded-2xl bg-secondary border border-border p-8 flex items-center justify-center relative overflow-hidden">
+                    <div className="absolute inset-0 bg-primary/5" />
                     <service.icon size={120} className="text-primary/20" />
                     <div className="absolute bottom-6 left-6 right-6">
-                      <div className="p-4 rounded-xl bg-card/80 backdrop-blur border border-border">
+                      <div className="p-4 rounded-xl bg-card/90 backdrop-blur border border-border">
                         <p className="text-sm font-medium text-foreground">{service.title}</p>
                         <p className="text-xs text-muted-foreground mt-1">Transform your business</p>
                       </div>
@@ -188,7 +188,7 @@ const ServicesPage = () => {
 
       {/* CTA */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10" />
+        <div className="absolute inset-0 bg-primary/5" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -197,7 +197,7 @@ const ServicesPage = () => {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Ready to <span className="gradient-text">Get Started?</span>
+              Ready to <span className="text-primary">Get Started?</span>
             </h2>
             <p className="text-muted-foreground mb-8">
               Let's discuss your project and find the perfect solution for your needs.

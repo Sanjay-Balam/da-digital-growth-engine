@@ -30,14 +30,14 @@ const Footer = () => {
   return (
     <footer className="relative bg-card border-t border-border">
       {/* Glow Effect */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="inline-block">
-              <span className="text-3xl font-bold gradient-text">DA</span>
+              <span className="text-3xl font-bold text-primary">DA</span>
               <p className="text-foreground/60 text-sm mt-1">Digital Growth Agency</p>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -48,7 +48,7 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="p-2 rounded-lg bg-muted hover:bg-primary/20 hover:text-primary transition-all duration-300"
+                  className="p-2 rounded-lg bg-secondary hover:bg-primary/20 hover:text-primary transition-all duration-300"
                   aria-label={social.label}
                 >
                   <social.icon size={18} />

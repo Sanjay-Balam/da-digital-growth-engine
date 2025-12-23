@@ -11,42 +11,36 @@ const projects = [
     category: "Web Development",
     description: "A fully-featured e-commerce platform with seamless checkout and inventory management.",
     tags: ["React", "Node.js", "Stripe"],
-    gradient: "from-primary to-secondary",
   },
   {
     title: "FinTech Mobile App",
     category: "App Development",
     description: "Mobile banking application with secure transactions and real-time analytics.",
     tags: ["React Native", "Firebase", "Plaid"],
-    gradient: "from-secondary to-neon-pink",
   },
   {
     title: "SaaS Dashboard",
     category: "UI/UX Design",
     description: "Comprehensive analytics dashboard for a B2B SaaS platform.",
     tags: ["Figma", "React", "D3.js"],
-    gradient: "from-neon-pink to-primary",
   },
   {
     title: "Healthcare Portal",
     category: "Custom Software",
     description: "Patient management system with appointment scheduling and telemedicine features.",
     tags: ["Vue.js", "Python", "PostgreSQL"],
-    gradient: "from-primary to-neon-pink",
   },
   {
     title: "Real Estate Platform",
     category: "Web Development",
     description: "Property listing and virtual tour platform with advanced search capabilities.",
     tags: ["Next.js", "Three.js", "Mapbox"],
-    gradient: "from-secondary to-primary",
   },
   {
     title: "Fitness Tracking App",
     category: "App Development",
     description: "Health and fitness app with workout plans, nutrition tracking, and social features.",
     tags: ["Flutter", "Go", "MongoDB"],
-    gradient: "from-neon-pink to-secondary",
   },
 ];
 
@@ -67,7 +61,7 @@ const Portfolio = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-hero-gradient" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -79,7 +73,7 @@ const Portfolio = () => {
               Our Work
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-3 mb-6">
-              Featured <span className="gradient-text">Projects</span>
+              Featured <span className="text-primary">Projects</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               Explore our portfolio of successful projects across various industries 
@@ -99,7 +93,7 @@ const Portfolio = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.05 }}
-                className="px-4 py-2 rounded-full bg-muted text-sm text-muted-foreground hover:bg-primary/20 hover:text-primary transition-all"
+                className="px-4 py-2 rounded-full bg-secondary text-sm text-muted-foreground hover:bg-primary/20 hover:text-primary transition-all"
               >
                 {industry}
               </motion.button>
@@ -119,19 +113,19 @@ const Portfolio = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative rounded-2xl bg-card border border-border overflow-hidden hover:border-primary/50 transition-all duration-500"
+                className="group relative rounded-2xl bg-card border border-border overflow-hidden hover:border-primary/40 transition-all duration-500"
               >
                 {/* Project Image Placeholder */}
-                <div className={`aspect-video bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-background/80 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-foreground/10">
+                <div className="aspect-video bg-secondary relative overflow-hidden">
+                  <div className="absolute inset-0 bg-primary/5 flex items-center justify-center">
+                    <span className="text-4xl font-bold text-primary/20">
                       {project.title.split(" ")[0]}
                     </span>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
                   
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
                       <ExternalLink size={20} className="text-primary-foreground" />
                     </div>
@@ -153,7 +147,7 @@ const Portfolio = () => {
                     {project.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="px-2 py-1 rounded-md bg-muted text-xs text-muted-foreground"
+                        className="px-2 py-1 rounded-md bg-secondary text-xs text-muted-foreground"
                       >
                         {tag}
                       </span>
@@ -168,7 +162,7 @@ const Portfolio = () => {
 
       {/* CTA */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10" />
+        <div className="absolute inset-0 bg-primary/5" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -177,7 +171,7 @@ const Portfolio = () => {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Have a Project in <span className="gradient-text">Mind?</span>
+              Have a Project in <span className="text-primary">Mind?</span>
             </h2>
             <p className="text-muted-foreground mb-8">
               Let's discuss how we can bring your vision to life.

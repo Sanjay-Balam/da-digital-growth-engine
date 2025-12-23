@@ -7,9 +7,8 @@ const CTA = () => {
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10" />
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[150px]" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[150px]" />
+      <div className="absolute inset-0 bg-primary/5" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-primary/10 rounded-full blur-[150px]" />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -19,7 +18,7 @@ const CTA = () => {
           className="max-w-3xl mx-auto text-center"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted border border-border mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border mb-6">
             <Zap size={14} className="text-primary" />
             <span className="text-sm text-muted-foreground">Ready to Grow?</span>
           </div>
@@ -27,7 +26,7 @@ const CTA = () => {
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             Let's Build Something{" "}
-            <span className="gradient-text">Amazing Together</span>
+            <span className="text-primary">Amazing Together</span>
           </h2>
 
           {/* Description */}

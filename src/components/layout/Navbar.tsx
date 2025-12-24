@@ -38,11 +38,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative">
-              <span className="text-2xl font-bold text-primary">DA</span>
-            </div>
-            <span className="text-foreground/80 text-sm hidden sm:block">Digital Growth</span>
+          <Link to="/" className="flex items-center gap-3 group">
+            <span className="text-2xl font-bold text-primary">DA</span>
+            <span className="text-foreground/70 text-sm hidden sm:block">Digital Growth Agency</span>
           </Link>
 
           {/* Desktop Navigation */}

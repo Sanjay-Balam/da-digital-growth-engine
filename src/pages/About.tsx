@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
+import agencyTeamImage from "@/assets/agency-team.jpg";
 
 const values = [
   {
@@ -133,11 +134,12 @@ const About = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square rounded-2xl bg-secondary border border-border p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-7xl font-bold text-primary">3</span>
-                  <p className="text-xl text-foreground mt-2">Founding Members</p>
-                </div>
+              <div className="aspect-square rounded-2xl overflow-hidden border border-border">
+                <img 
+                  src={agencyTeamImage} 
+                  alt="DA Digital Growth Agency - Modern tech workspace" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl bg-card border border-border p-4 flex flex-col items-center justify-center">
                 <span className="text-3xl font-bold text-primary">2025</span>

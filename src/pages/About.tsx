@@ -29,12 +29,30 @@ const values = [
 ];
 
 const whyChooseUs = [
-  "8+ years of industry experience",
-  "150+ successful projects delivered",
-  "Dedicated team of 15+ experts",
+  "Fresh perspective with modern technologies",
+  "Dedicated team of passionate experts",
   "24/7 support and maintenance",
   "Transparent pricing, no hidden costs",
   "Agile methodology for faster delivery",
+  "End-to-end digital solutions",
+];
+
+const teamMembers = [
+  {
+    name: "Akshay",
+    role: "Marketing & Creative Lead",
+    description: "Akshay heads the digital marketing division, handling social media management, video editing, and performance marketing strategies. His creative vision and data-driven approach help businesses build strong online presence and engagement.",
+  },
+  {
+    name: "Venkat",
+    role: "Technical Lead & Developer",
+    description: "Venkat is the backbone of our development team, specializing in building robust web and mobile applications. His expertise in modern technologies ensures our clients get scalable, high-performance digital solutions.",
+  },
+  {
+    name: "Sanjay",
+    role: "Full-Stack Developer",
+    description: "Sanjay works alongside Venkat to craft seamless applications for businesses. From custom software to complex integrations, he ensures every project meets the highest standards of quality and functionality.",
+  },
 ];
 
 const About = () => {
@@ -80,22 +98,31 @@ const About = () => {
                 Our Story
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold mt-3 mb-6">
-                Transforming Businesses <span className="text-primary">Since 2016</span>
+                A Fresh Start in <span className="text-primary">2025</span>
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  DA Digital Growth Agency was founded with a simple yet powerful vision: 
-                  to help businesses of all sizes harness the power of digital transformation 
-                  to achieve unprecedented growth.
+                  DA Digital Growth Agency was founded in 2025 by three passionate individuals—
+                  <span className="text-foreground font-medium">Akshay, Venkat, and Sanjay</span>—
+                  with a shared vision: to help businesses thrive in the digital era through 
+                  innovative, result-driven solutions.
                 </p>
                 <p>
-                  What started as a small team of passionate digital enthusiasts has grown 
-                  into a full-service agency with expertise spanning digital marketing, 
-                  web development, mobile applications, and custom software solutions.
+                  Our team brings together the perfect blend of creativity and technical expertise. 
+                  <span className="text-foreground font-medium"> Akshay</span> leads our marketing 
+                  and creative division, managing social media, video production, and digital 
+                  marketing campaigns that capture attention and drive engagement.
                 </p>
                 <p>
-                  Today, we're proud to have partnered with over 50 businesses worldwide, 
-                  delivering 150+ successful projects that have driven real, measurable results.
+                  On the development front, <span className="text-foreground font-medium">Venkat and Sanjay</span> form 
+                  our powerhouse dev team. Together, they build cutting-edge web applications, 
+                  mobile apps, and custom software solutions that empower businesses to scale 
+                  and succeed in today's competitive landscape.
+                </p>
+                <p>
+                  Though we're a young agency, our combined skills and relentless dedication 
+                  make us the ideal partner for startups, entrepreneurs, and growing businesses 
+                  looking for a team that truly cares about their success.
                 </p>
               </div>
             </motion.div>
@@ -108,21 +135,60 @@ const About = () => {
             >
               <div className="aspect-square rounded-2xl bg-secondary border border-border p-8 flex items-center justify-center">
                 <div className="text-center">
-                  <span className="text-7xl font-bold text-primary">8+</span>
-                  <p className="text-xl text-foreground mt-2">Years of Excellence</p>
+                  <span className="text-7xl font-bold text-primary">3</span>
+                  <p className="text-xl text-foreground mt-2">Founding Members</p>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl bg-card border border-border p-4 flex flex-col items-center justify-center">
-                <span className="text-3xl font-bold text-primary">50+</span>
-                <p className="text-xs text-muted-foreground text-center">Happy Clients</p>
+                <span className="text-3xl font-bold text-primary">2025</span>
+                <p className="text-xs text-muted-foreground text-center">Founded</p>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Team Section */}
       <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <span className="text-primary text-sm font-semibold uppercase tracking-wider">
+              Meet The Team
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold mt-3">
+              The <span className="text-primary">Founders</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all"
+              >
+                <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">{member.name[0]}</span>
+                </div>
+                <h3 className="text-xl font-bold text-center mb-1">{member.name}</h3>
+                <p className="text-primary text-sm text-center mb-4">{member.role}</p>
+                <p className="text-sm text-muted-foreground text-center">{member.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div
@@ -136,9 +202,9 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
               <p className="text-muted-foreground">
-                To empower businesses with innovative digital solutions that drive growth, 
-                enhance efficiency, and create lasting value. We're committed to being 
-                the catalyst for our clients' digital transformation journey.
+                To empower startups and growing businesses with affordable, high-quality 
+                digital solutions. We believe every business deserves access to expert 
+                marketing, stunning designs, and powerful technology—regardless of size or budget.
               </p>
             </motion.div>
 
@@ -154,9 +220,9 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-muted-foreground">
-                To become the most trusted digital growth partner for businesses worldwide, 
-                recognized for our innovation, excellence, and unwavering commitment to 
-                delivering results that exceed expectations.
+                To become the go-to digital partner for ambitious businesses, known for 
+                our fresh ideas, transparent approach, and genuine commitment to helping 
+                our clients succeed in the digital landscape.
               </p>
             </motion.div>
           </div>
@@ -202,7 +268,7 @@ const About = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20 bg-secondary/30" id="why-choose-us">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div

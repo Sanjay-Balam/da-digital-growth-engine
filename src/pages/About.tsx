@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import agencyTeamImage from "@/assets/agency-team.jpg";
+
 
 const values = [
   {
@@ -89,64 +89,44 @@ const About = () => {
       {/* Story Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-primary text-sm font-semibold uppercase tracking-wider">
-                Our Story
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold mt-3 mb-6">
-                A Fresh Start in <span className="text-primary">2025</span>
-              </h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  DA Digital Growth Agency was founded in 2025 by three passionate individuals—
-                  <span className="text-foreground font-medium">Akshay, Venkat, and Sanjay</span>—
-                  with a shared vision: to help businesses thrive in the digital era through 
-                  innovative, result-driven solutions.
-                </p>
-                <p>
-                  Our team brings together the perfect blend of creativity and technical expertise. 
-                  <span className="text-foreground font-medium"> Akshay</span> leads our marketing 
-                  and creative division, managing social media, video production, and digital 
-                  marketing campaigns that capture attention and drive engagement.
-                </p>
-                <p>
-                  On the development front, <span className="text-foreground font-medium">Venkat and Sanjay</span> form 
-                  our powerhouse dev team. Together, they build cutting-edge web applications, 
-                  mobile apps, and custom software solutions that empower businesses to scale 
-                  and succeed in today's competitive landscape.
-                </p>
-                <p>
-                  Though we're a young agency, our combined skills and relentless dedication 
-                  make us the ideal partner for startups, entrepreneurs, and growing businesses 
-                  looking for a team that truly cares about their success.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="aspect-square rounded-2xl overflow-hidden border border-border">
-                <img 
-                  src={agencyTeamImage} 
-                  alt="DA Digital Growth Agency - Modern tech workspace" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl bg-card border border-border p-4 flex flex-col items-center justify-center">
-                <span className="text-3xl font-bold text-primary">2025</span>
-                <p className="text-xs text-muted-foreground text-center">Founded</p>
-              </div>
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl"
+          >
+            <span className="text-primary text-sm font-semibold uppercase tracking-wider">
+              Our Story
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold mt-3 mb-6">
+              A Fresh Start in <span className="text-primary">2025</span>
+            </h2>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                DA Digital Growth Agency was founded in 2025 by three passionate individuals—
+                <span className="text-foreground font-medium">Akshay, Venkat, and Sanjay</span>—
+                with a shared vision: to help businesses thrive in the digital era through 
+                innovative, result-driven solutions.
+              </p>
+              <p>
+                Our team brings together the perfect blend of creativity and technical expertise. 
+                <span className="text-foreground font-medium"> Akshay</span> leads our marketing 
+                and creative division, managing social media, video production, and digital 
+                marketing campaigns that capture attention and drive engagement.
+              </p>
+              <p>
+                On the development front, <span className="text-foreground font-medium">Venkat and Sanjay</span> form 
+                our powerhouse dev team. Together, they build cutting-edge web applications, 
+                mobile apps, and custom software solutions that empower businesses to scale 
+                and succeed in today's competitive landscape.
+              </p>
+              <p>
+                Though we're a young agency, our combined skills and relentless dedication 
+                make us the ideal partner for startups, entrepreneurs, and growing businesses 
+                looking for a team that truly cares about their success.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 

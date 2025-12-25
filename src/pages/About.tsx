@@ -40,13 +40,13 @@ const whyChooseUs = [
 const teamMembers = [
   {
     name: "Akshay",
-    role: "Marketing & Creative Lead",
+    role: "Marketing & Creative Head",
     description: "Akshay heads the digital marketing division, handling social media management, video editing, and performance marketing strategies. His creative vision and data-driven approach help businesses build strong online presence and engagement.",
   },
   {
     name: "Venkat",
-    role: "Technical Lead & Developer",
-    description: "Venkat is the backbone of our development team, specializing in building robust web and mobile applications. His expertise in modern technologies ensures our clients get scalable, high-performance digital solutions.",
+    role: "Full-Stack Developer",
+    description: "Venkat specializes in building robust web and mobile applications. His expertise in modern technologies ensures our clients get scalable, high-performance digital solutions.",
   },
   {
     name: "Sanjay",

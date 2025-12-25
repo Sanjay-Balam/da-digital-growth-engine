@@ -51,7 +51,7 @@ const teamMembers = [
   {
     name: "Sanjay",
     role: "Full-Stack Developer",
-    description: "Sanjay works alongside Venkat to craft seamless applications for businesses. From custom software to complex integrations, he ensures every project meets the highest standards of quality and functionality.",
+    description: "Sanjay specializes in building robust web and mobile applications. His expertise in modern technologies ensures our clients get scalable, high-performance digital solutions.",
   },
 ];
 
